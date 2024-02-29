@@ -1,0 +1,47 @@
+<form class="add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="name">Resident's Name</label>
+        <input type="text" name="name" [(ngModel)]="name" id="name" placeholder="Add Resident's Name">
+    </div>
+    <div class="form-control">
+        <label for="city">City</label>
+        <input type="text" name="city" [(ngModel)]="city" id="city" placeholder="Add City">
+    </div>
+    <div class="form-control">
+        <label for="county">County</label>
+        <input type="text" name="county" [(ngModel)]="county" id="county" placeholder="Add County">
+    </div>
+    <div class="form-control">
+        <label for="state">State</label>
+        <input type="text" name="state" [(ngModel)]="state" id="state" placeholder="Add State">
+    </div>
+    <div class="form-control">
+        <label for="zipCode">Zip Code</label>
+        <input type="text" name="zipCode" [(ngModel)]="zipCode" id="zipCode" placeholder="Add Zip Code">
+    </div>
+    <div class="form-control">
+        <label for="street">Street</label>
+        <input type="text" name="street" [(ngModel)]="street" id="street" placeholder="Add Street">
+    </div>
+    <div class="form-control">
+        <label for="apt">Apt</label>
+        <input type="text" name="apt" [(ngModel)]="apt" id="apt" placeholder="Add Apt">
+    </div>
+    <div class="form-control">
+        <label for="action">Action</label>
+        <input type="radio" ng-control="action" name="action" [(ngModel)]="action" id="action" [value]="1">
+    </div>
+    <div class="form-control">
+        <label for="action">Action</label>
+        <input type="radio" ng-control="action" name="action" [(ngModel)]="action" id="action" [value]="2">
+    </div>
+    <div class="form-control">
+        <label for="action">Action</label>
+        <input type="radio" ng-control="action" name="action" [(ngModel)]="action" id="action" [value]="3">
+    </div>
+    <div class="form-control form-control-check">
+        <label for="reminder">Set Reminder</label>
+        <input type="checkbox" name="reminder" [(ngModel)]="reminder" id="reminder">
+    </div>
+    <input type="submit" value="Save Task" class="btn btn-block">
+</form>
